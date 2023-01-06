@@ -27,4 +27,21 @@ return (_multiplier(2, n));
 /**
  * _multiplier - Returns an iterative multiplication.
  *
+ * @x: is an int.
+ * @n: is an int.
+ *
+ * Return: Returns the result.
+ *
+**/
 
+int _multiplier(int x, int n)
+{
+
+if (x * x == n)
+	return (x);
+else if (x * x > n)
+	return (-1);
+else
+	return (_multiplier(++x, n));
+
+}
